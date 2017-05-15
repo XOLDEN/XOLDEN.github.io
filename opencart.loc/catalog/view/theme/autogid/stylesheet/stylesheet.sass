@@ -1,0 +1,271 @@
+@import "bourbon"
+@import "vars"
+@import "fonts"
+
+//Custom styles here
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	overflow-x: hidden
+	font-family: MyriadSetProText, sans-serif
+
+header
+	background-color: #de2a1b
+	padding: 7px 0
+	.dropdown
+		display: inline-block
+		a
+			transition: all .25s ease
+			&.dropdown-toggle
+				color: white
+				font-size: 14px
+				margin-top: 3px 0 0
+				padding: 8px 0 4px
+				display: block
+				&:hover, &:active, &:focus
+					color: #fff
+					text-decoration: none
+a, button
+	outline: none!important
+
+ul.col-md-3
+	margin: 0
+
+.logo
+	margin-top: 0px
+
+.form-control
+	&:focus
+		box-shadow: none
+
+#search
+	width: 100%
+	font-family: Arial, sans-serif
+	margin-top: 2px
+.form-control
+		padding: 5px 16px
+		height: 35px
+		border: none
+			radius: 0
+		background-color: #444
+		font:
+			style: italic
+			size: 13px
+		color: #fff
+		transition: background-color .25s ease, box-shadow .25s ease
+		box-shadow: transparent 0 0 0 1px inset
+		&:focus, &:hover
+			background-color: #555
+			box-shadow: #777 0 0 0 1px inset
+.input-group-btn
+		position: absolute
+		right: 26px
+		.btn
+			padding: 9px 10px
+			border: none
+				radius: 0
+			background-color: transparent
+			color: #999
+			font-size: 13px
+
+.header-phone
+	display: inline-block
+	color: #fff
+	float: right
+	font-size: 18px
+	padding-top: 5px
+	padding-left: 10px
+	border-left: 1px solid #444444
+
+.fa-user
+    color: #fff
+
+.dropdown-menu
+	border-radius: 0
+	border: none
+	margin-top: 15px
+	right: -30px
+	left: 0
+.top-menu
+	border-bottom: #EDEDED 1px solid
+	.cart-wrapper
+		.dropdown-menu
+			padding: 15px
+			width: 460px
+			.table-striped
+	a
+		color: #333
+.navbar
+		margin-bottom: 0px
+		font-size: 14px
+		min-height: 40px
+        
+#cart
+	button
+		background-color: $accent3
+		color: #fff
+		border-radius: 0
+		padding-top: 14px
+		padding-bottom: 12px
+		border: none
+		font-family: MyriadSetProThin, sans-serif
+		font-size: 16px
+		text-align: left
+.cart-wrapper
+		padding-left: 0
+
+
+.toggle-top-text
+	text-transform: uppercase
+	display: inline-block
+	color: black
+	font-family: MyriadSetProSemiBold, sans-serif
+	padding: 16px 0
+
+.navbar-toggle
+	margin-right: 0
+
+.owl-wrapper-outer
+	border: none
+	box-shadow: none
+	border-radius: 0
+
+.owl-carousel .owl-buttons div i
+	font-size: 35px
+	opacity: .4
+.list-group-item
+	padding: 11px 15px
+	border-color: #EDEDED
+	transition: background .25s ease, color .25s ease, text-indent .25s ease, border-color .25s ease
+	
+.main-footer
+	margin-top: 60px
+	.logo
+		opacity: .5
+		margin-top: 6px
+		transition: opacity .25s ease
+		&:hover
+			opacity: .7
+	.footer-cnt
+		background-color: #333
+		padding: 0px 0
+		> .container
+			> .row
+				>div:last-child
+					border-left: #444 1px solid
+	.footer-mnu
+		ul
+			margin: 0
+			padding: 0
+			width: 100%
+			display: block
+			text-align: center
+			li
+				display: inline-block
+				font-size: 14px
+				float: none
+				a
+					color: #999
+					display: block
+					padding: 10px 14px
+					transition: all .25s ease
+					&:hover, &:focus
+						color: #b6b6b6
+						background-color: transparent
+						text-decoration: underline
+.nav-social
+	padding: 6px 0 0
+	text-align: right
+	ul, li
+		padding: 0
+		margin: 0
+	li
+		display: inline-block
+		a
+			color: #777
+			font-size: 20px
+			padding: 0 5px
+			transition: color .25s ease
+			&:hover
+				color: lighten(#8f8f8f, 10%)
+
+.footer-phone
+	background-color: #262626
+	color: #8c8c8c
+	padding: 0px 0 0px
+	.site-phone
+		font-size: 22px
+		color: #c8c8c8
+		margin-top: 8px
+		line-height: 1.3
+	.site-phone_wrap
+		text-align: center
+		font-family: MyriadSetProThin, sans-serif
+	.callback
+		color: #777
+		border-bottom: 1px dashed #777
+		transition: border-bottom .25s ease, color .25s ease
+		font-size: 14px
+		&:hover, &:focus
+			color: lighten(#999, 10%)
+			text-decoration: none
+			border-color: lighten(#999, 10%)
+.btn
+	border-radius: 0
+	transition: background-color .25s ease, border-color .25s ease
+
+.product-popup
+	background-color: #fff
+	max-width: 320px
+	position: relative
+	margin: auto
+	padding: 15px
+	display: none
+	.success
+		position: absolute
+		z-index: 1
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: #fff
+		text-align: center
+		text-transform: uppercase
+		padding: 80% 10% 10%
+		display: none
+
+	form
+		position: relative
+		margin-top: 15px
+	h2
+		margin:
+			top: 15px
+			bottom: 10px
+		font-size: 28px
+		text-align: center
+		font-family: MyriadSetProThin, sans-serif
+	p
+		text-align: center
+	.btn
+		position: absolute
+		right: 0
+		top: 0
+
+.callback-form
+	.success
+		padding-top: 28%
+
+.form-control
+	border-radius: 0
+	font-family: arial, sans-serif
+.main-footer
+    position: fixed; 
+    left: 0; bottom: 0; 
+    
+    
+    
+    width: 100%; 
+
+@import "media"
