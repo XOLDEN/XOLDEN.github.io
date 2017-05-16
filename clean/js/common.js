@@ -26,7 +26,7 @@ $(document).ready(function() {
 		});
 	};
 
-	$(".gallery img").lazyload({
+	$(".gallery a").lazyload({
 		effect : "fadeIn",
 		threshold : 1000
 	}).parent().hover(function() {
@@ -57,15 +57,15 @@ $(document).ready(function() {
 		$(window).trigger("resize");
 	});
 
- //$(".filter-label").click(function() {
- //	$(".filter-label").removeClass("active");
- //	var filter = $(this).addClass("active").data("filter");
- //	wall.filter(filter);
-	//setTimeout(function() {
- 	//	$(window).resize();
-	//	wall.fitWidth();
- //	}, 400);
-// });
+	 $(".filter_label").click(function() {
+	 	$(".filter_label").removeClass("active");
+	 	var filter = $(this).addClass("active").data("filter");
+	 	wall.filter(filter);
+		setTimeout(function() {
+	 		$(window).resize();
+			wall.fitWidth();
+	 	}, 400);
+	 });
  			
 
 	//Аякс отправка форм

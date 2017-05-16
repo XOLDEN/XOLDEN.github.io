@@ -240,9 +240,16 @@ transition: all .5s;
 .gallery img {
   display: block;
   max-width: 100%;
-  -webkit-transition: all 15s;
-  -o-transition: all 15s;
-  transition: all 15s;
+  -webkit-transition: all 10s;
+  -o-transition: all 10s;
+  transition: all 10s;
+}
+/* Эффект приближения*/
+.gallery img:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5); 
 }
 .left_side.active +.content {
   left: 250px;
@@ -250,4 +257,34 @@ transition: all .5s;
   -o-transition: all 3s;
   transition: all 3s;
   transition-delay: .5s;
+}
+.filter_items {
+  bottom: 0;
+  color: #fff;
+  padding: 10px 10px 0;
+  position: fixed;
+  right: 0;
+  text-align: right;
+  width: 100%;
+  background-color: #181818;
+}
+.filter_label {
+  background-color: transparent;
+  border-color: #fff;
+  padding: 5px 15px;
+  opacity: .4;
+  margin: 0 3px 15px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  border: 1px #fff solid;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.filter_label:hover,
+.filter_label:active {
+  background-color: tomato;
+  opacity: 1;
+  border-color: tomato;
+
 }
