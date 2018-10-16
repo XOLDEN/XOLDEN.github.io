@@ -1,5 +1,6 @@
 body {
     min-width: 1920px;
+    
     margin: 0;
     padding: 0;
     font-size: 18px;
@@ -204,4 +205,37 @@ img {
     height: 175px;
     background-color: #87b7eb;
     z-index: -1;
+}
+-------------------------
+.science {
+    display:flex;
+    flex-direction: row;
+    padding-right: 155px;
+}
+.leftImage {
+    width: 900px;
+    margin-right: 0px;
+
+}
+.block {
+    position: relative;
+    float: right;
+    margin-right: 170px;
+    width: 790px;
+    height: 1040px;
+    top:-1260px;
+}
+.block p{
+    font-size: 30px;
+    line-height: 35px;
+    padding-bottom:10px; 
+}
+.block li{
+    font-size: 30px;
+    line-height: 35px;
+    padding-bottom: 40px;
+}
+.block h2 {
+    font-size: 45px;
+    line-height: 45px;
 }
